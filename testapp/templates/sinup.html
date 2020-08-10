@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="sinup" method="post">
+      {% csrf_token %}
+      {% if msg %}
+        <p style="color:red">{{msg}}</p>
+      {% endif %}
+      <input type="text" name="fname" value="" placeholder="First Name" required>
+      <input type="text" name="lname" value="" placeholder="Last Name" required><br>
+      <input type="email" name="email" value="" placeholder="Email" required>
+      <input type="text" name="uname" value="" placeholder="UserName" required><br>
+      <input type="password" name="password" value="" placeholder="Password" required>
+      <input type="password" name="repassword" value="" placeholder="Confirm Password" required><br>
+      <button type="submit" name="button">Sign Up</button>
+    </form>
+  </body>
+</html>

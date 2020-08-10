@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>detail</title>
+  </head>
+  <body>
+    <form class="" action="detail" method="post">
+      {% csrf_token %}
+      <input type="text" name="add1" value="" placeholder="Address1" required><br>
+      <input type="text" name="add2" value="" placeholder="Address2" required><br>
+      <input type="text" name="city" value="" placeholder="City" required><br>
+      <input type="text" name="state" value="" placeholder="State" required><br>
+      <input type="text" name="country" value="" placeholder="Country" required><br>
+      <input type="number" name="pin" value="" placeholder="Pin-Code" required><br>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>

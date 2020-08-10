@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>update</title>
+  </head>
+  <body>
+    <form class="" action="update" method="post">
+      {% csrf_token %}
+      <h1>{{data.username}}</h1>
+      Occupation:<input type="text" name="occup" value={{data.occupation}} placeholder="Occupation" required><br>
+      Address1:<input type="text" name="add1" value={{data.add1}} placeholder="Address1" required><br>
+      Address2:<input type="text" name="add2" value={{data.add2}} placeholder="Address2" required><br>
+      City:<input type="text" name="city" value={{data.city}} placeholder="City" required><br>
+      State:<input type="text" name="state" value={{data.state}} placeholder="State" required><br>
+      Country:<input type="text" name="country" value={{data.country}} placeholder="Country" required><br>
+      Pin_Code:<input type="number" name="pin" value={{data.pin}} placeholder="Pin-Code" required><br>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>

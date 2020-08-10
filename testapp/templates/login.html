@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="login" method="post">
+      {% csrf_token %}
+      {% if msg %}
+        <p style="color:red">{{msg}}</p>
+      {% endif %}
+      <input type="text" name="email" value="" placeholder="Email" required><br>
+      <input type="password" name="password" value="" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</html>
